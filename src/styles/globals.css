@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --ds-primary: #6366f1;
+  --ds-primary-foreground: #f8fafc;
+  --ds-surface: #f8fafc;
+  --ds-surface-elevated: #ffffff;
+  --ds-muted: #64748b;
+  --ds-muted-foreground: #475569;
+  --ds-border: #e2e8f0;
+  --ds-ring: #6366f1;
+  --ds-success: #16a34a;
+  --ds-success-foreground: #f0fdf4;
+  --ds-warning: #d97706;
+  --ds-warning-foreground: #fffbeb;
+  --ds-destructive: #dc2626;
+  --ds-destructive-foreground: #fef2f2;
+  --ds-info: #0284c7;
+  --ds-info-foreground: #f0f9ff;
+  --ds-neutral-50: #f8fafc;
+  --ds-neutral-100: #f1f5f9;
+  --ds-neutral-200: #e2e8f0;
+  --ds-neutral-300: #cbd5e1;
+  --ds-neutral-400: #94a3b8;
+  --ds-neutral-500: #64748b;
+  --ds-neutral-600: #475569;
+  --ds-neutral-700: #334155;
+  --ds-neutral-800: #1e293b;
+  --ds-neutral-900: #0f172a;
+  --ds-background: var(--ds-surface);
+  --ds-foreground: var(--ds-neutral-900);
+  --font-instrument: ui-serif, Georgia, "Times New Roman", serif;
+  --font-body: var(--font-geist-sans);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+.dark {
+  --ds-primary: #818cf8;
+  --ds-primary-foreground: #0f172a;
+  --ds-surface: #0f172a;
+  --ds-surface-elevated: #1e293b;
+  --ds-muted: #94a3b8;
+  --ds-muted-foreground: #cbd5e1;
+  --ds-border: #334155;
+  --ds-ring: #818cf8;
+  --ds-success: #22c55e;
+  --ds-success-foreground: #052e16;
+  --ds-warning: #fbbf24;
+  --ds-warning-foreground: #422006;
+  --ds-destructive: #f87171;
+  --ds-destructive-foreground: #450a0a;
+  --ds-info: #38bdf8;
+  --ds-info-foreground: #082f49;
+  --ds-neutral-50: #0f172a;
+  --ds-neutral-100: #1e293b;
+  --ds-neutral-200: #334155;
+  --ds-neutral-300: #475569;
+  --ds-neutral-400: #64748b;
+  --ds-neutral-500: #94a3b8;
+  --ds-neutral-600: #cbd5e1;
+  --ds-neutral-700: #e2e8f0;
+  --ds-neutral-800: #f1f5f9;
+  --ds-neutral-900: #f8fafc;
+  --ds-background: var(--ds-surface);
+  --ds-foreground: var(--ds-neutral-900);
+}
+
+@theme inline {
+  --color-primary: var(--ds-primary);
+  --color-primary-foreground: var(--ds-primary-foreground);
+  --color-surface: var(--ds-surface);
+  --color-surface-elevated: var(--ds-surface-elevated);
+  --color-muted: var(--ds-muted);
+  --color-muted-foreground: var(--ds-muted-foreground);
+  --color-border: var(--ds-border);
+  --color-ring: var(--ds-ring);
+  --color-success: var(--ds-success);
+  --color-success-foreground: var(--ds-success-foreground);
+  --color-warning: var(--ds-warning);
+  --color-warning-foreground: var(--ds-warning-foreground);
+  --color-destructive: var(--ds-destructive);
+  --color-destructive-foreground: var(--ds-destructive-foreground);
+  --color-info: var(--ds-info);
+  --color-info-foreground: var(--ds-info-foreground);
+  --color-neutral-50: var(--ds-neutral-50);
+  --color-neutral-100: var(--ds-neutral-100);
+  --color-neutral-200: var(--ds-neutral-200);
+  --color-neutral-300: var(--ds-neutral-300);
+  --color-neutral-400: var(--ds-neutral-400);
+  --color-neutral-500: var(--ds-neutral-500);
+  --color-neutral-600: var(--ds-neutral-600);
+  --color-neutral-700: var(--ds-neutral-700);
+  --color-neutral-800: var(--ds-neutral-800);
+  --color-neutral-900: var(--ds-neutral-900);
+  --color-background: var(--ds-background);
+  --color-foreground: var(--ds-foreground);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-instrument);
+  --font-mono: var(--font-geist-mono);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
